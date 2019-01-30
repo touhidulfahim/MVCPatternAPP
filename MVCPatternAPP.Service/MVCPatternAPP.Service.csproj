@@ -70,10 +70,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\CategoryService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVCPatternAPP.Data\MVCPatternAPP.Data.csproj">
+      <Project>{7a73059f-69ac-4404-aee7-2aff70e377e7}</Project>
+      <Name>MVCPatternAPP.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVCPatternAPP.Entity\MVCPatternAPP.Entity.csproj">
+      <Project>{37a46383-3d74-4fca-8b09-ef3ca8b5f12c}</Project>
+      <Name>MVCPatternAPP.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
